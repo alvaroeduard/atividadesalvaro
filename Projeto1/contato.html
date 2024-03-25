@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JM Viagens - Página principal</title>
+        <style>
+            .forms {
+              font-family: Arial, sans-serif;
+              background-color: #f4f4f4;
+              padding: 20px;
+              position: relative;
+            }
+            form {
+              background-color: #fff;
+              padding: 20px;
+              border-radius: 8px;
+              box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+              max-width: 600px;
+              margin: 0 auto;
+            }
+            h1 {
+              text-align: center;
+              color: #333;
+            }
+            label {
+              display: block;
+              margin-bottom: 5px;
+              font-weight: bold;
+            }
+            input, select {
+              width: 100%;
+              padding: 10px;
+              margin-bottom: 15px;
+              border-radius: 5px;
+              border: 1px solid #ccc;
+              box-sizing: border-box;
+            }
+            button {
+              width: 100%;
+              padding: 10px;
+              background-color: #007bff;
+              color: #fff;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+            }
+            button:hover {
+              background-color: #0056b3;
+            }
+          </style>
+    </head>
+    <body>
+
+        <table border="0" width="900" align="center">
+            <tr>
+                <td> <img src="imagens/logo.png" /></td>
+                <td align="right">
+                    <a href="index.html">Home</a>
+                    <a href="quem-somos.html">Quem somos</a>
+                    <a href="contato.html">Contato</a>
+                    <a href="destinos.html">Destinos</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><h1>Buscar Pacotes de Viagens</h1></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="forms">
+                        <form id="formulario">
+                          <label for="origem">Origem:</label>
+                          <select id="origem" name="origem" required>
+                            <option value="">Selecione a Origem</option>
+                            <option value="Fortaleza">Fortaleza</option>
+                            <option value="Recife">Recife</option>
+                            <option value="Salvador">Salvador</option>
+                            <option value="Rio de Janeiro">Rio de Janeiro</option>
+                            <option value="Brasília">Brasília</option>
+                            <option value="São Luís">São Luís</option>
+                          </select>
+                      
+                          <label for="destino">Destino:</label>
+                          <select id="destino" name="destino" required>
+                            <option value="">Selecione o Destino</option>
+                            <option value="Fortaleza">Fortaleza</option>
+                            <option value="Recife">Recife</option>
+                            <option value="Salvador">Salvador</option>
+                            <option value="Rio de Janeiro">Rio de Janeiro</option>
+                            <option value="Brasília">Brasília</option>
+                            <option value="São Luís">São Luís</option>
+                          </select>
+                      
+                          <label for="email">E-mail:</label>
+                          <input type="email" id="email" name="email" required>
+                      
+                          <label for="data_partida">Data de Partida:</label>
+                          <input type="date" id="data_partida" name="data_partida" required>
+                      
+                          <label for="data_retorno">Data de Retorno:</label>
+                          <input type="date" id="data_retorno" name="data_retorno" required>
+                      
+                          <label for="quartos">Quartos:</label>
+                          <input type="number" id="quartos" name="quartos" min="1" required>
+                      
+                          <label for="adultos">Quantidade de Adultos:</label>
+                          <input type="number" id="adultos" name="adultos" min="1" required>
+                      
+                          <label for="criancas">Quantidade de Crianças:</label>
+                          <input type="number" id="criancas" name="criancas" min="0" required>
+                      
+                          <button type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><h4>© 2024 JM Viagens. Todos os direitos reservados</h4></td>
+            </tr>
+            
+        </table>
+    
+    </body>
+</html>
