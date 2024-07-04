@@ -1,0 +1,10 @@
+body{
+    background: #61bd8c;
+}
+
+#conteudo{
+    background: #FFFFFF;
+    padding: 10px;
+    width: 900px;
+    margin: 30px 100px;
+}
