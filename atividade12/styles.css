@@ -9,9 +9,5 @@
 }
 
 .pessoa::before{
-    content: "Nome: " attr(data-nome);
-}
-
-.pessoa::after{
-    content: " - ";
+    content: "Nome: " attr(data-nome) " - " "Idade: "attr(data-idade) " Anos - CPF: "attr(data-cpf);
 }
