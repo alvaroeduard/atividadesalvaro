@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 12 - Atributo Data</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+        function mostravalor(componente){
+            var valor = componente.getAttribute('data-nome');
+            alert(valor);
+        }
+    </script>
+</head>
+<body>
+    <h1>Atividade 12 - Atributo Data</h1>
+    <ul>
+        <li class="pessoa" onclick="mostravalor(this)" data-nome="João" data-idade="20" data-altura="170" ></li>
+        <li class="pessoa" onclick="mostravalor(this)" data-nome="José" data-idade="30" data-altura="180" ></li>
+        <li class="pessoa" onclick="mostravalor(this)" data-nome="Maria" data-idade="40" data-altura="160" ></li>
+    </ul>
+</body>
+</html>

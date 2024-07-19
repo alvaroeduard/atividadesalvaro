@@ -1,0 +1,17 @@
+.pessoa {
+    font-family: Arial, sans-serif;
+    margin: 5px 0;
+    color: #ad0b0b;
+}
+
+.pessoa[data-idade='30']{
+    color: #06069e;
+}
+
+.pessoa::before{
+    content: "Nome: " attr(data-nome);
+}
+
+.pessoa::after{
+    content: " - ";
+}
