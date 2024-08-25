@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,17 +10,21 @@
             font-family: Arial, sans-serif;
             margin: 20px;
         }
+
         .produto {
             margin-bottom: 20px;
         }
+
         .produto h3 {
             margin: 0;
         }
+
         .produto-detalhes {
             display: none;
         }
     </style>
 </head>
+
 <body>
 
     <h1>Produtos</h1>
@@ -46,16 +51,17 @@
         function showdetalhes(button) {
             const produto = button.parentElement; /* div produto pai do botão, para cada produto uma div */
             const detalhes = produto.querySelector('.produto-detalhes'); /* p que vai mostrar os detalhes do produto*/
-			/* pega os atributos data de cada produto, esses atributos data estão na div produto */
+            /* pega os atributos data de cada produto, esses atributos data estão na div produto */
             const id = produto.getAttribute('data-id');
             const preco = produto.getAttribute('data-preco');
             const categoria = produto.getAttribute('data-categoria');
-			
-			/* seta no conteúdo texto da p detalhes as informações do produto  */
+
+            /* seta no conteúdo texto da p detalhes as informações do produto  */
             detalhes.textContent = `ID: ${id}, Preço: R$ ${preco}, Categoria: ${categoria}`;
             detalhes.style.display = 'block';
         }
     </script>
 
 </body>
+
 </html>

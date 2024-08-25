@@ -1,4 +1,4 @@
-.box{
+.box {
     position: relative;
     left: 30px;
     top: 30px;
@@ -12,18 +12,22 @@
         transform: rotate(0deg);
         background-color: coral;
     }
+
     25% {
         transform: rotate(90deg);
         background-color: lightblue;
     }
+
     50% {
         transform: rotate(180deg);
         background-color: lightgreen;
     }
+
     75% {
         transform: rotate(270deg);
         background-color: lightcoral;
     }
+
     100% {
         transform: rotate(360deg);
         background-color: coral;

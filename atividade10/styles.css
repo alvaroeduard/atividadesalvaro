@@ -1,38 +1,38 @@
-.menu{
+.menu {
     background: #EEE685;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 18px;
     padding: 10px;
 }
 
-a:link{
+a:link {
     color: #b9c941;
     text-decoration: none;
 }
 
-a:visited{
+a:visited {
     color: #458b00;
 }
 
-a:hover{
+a:hover {
     color: #8B4726;
     background: #ffa600;
 }
 
-a:active{
+a:active {
     color: #FF1493;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.container{
+.container {
     display: flex;
     flex-wrap: wrap;
 }
 
-.noticia{
+.noticia {
     display: flex;
     align-items: center;
     border: 1px solid #ddd;
@@ -40,7 +40,7 @@ a{
     width: 800px;
     height: 200px;
     margin: 20px auto;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     float: left;
     border-radius: 20px;
 }
