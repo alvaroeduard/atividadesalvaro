@@ -50,6 +50,15 @@
           </style>
     </head>
     <body>
+      <script>
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const token = localStorage.getItem('authToken');
+            if (!token) {
+              window.location.href = "../index.html";
+            }
+        });
+    </script>
 
         <table border="0" width="900" align="center">
             <tr>

@@ -8,6 +8,15 @@
 </head>
 
 <body>
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const token = localStorage.getItem('authToken');
+            if (!token) {
+                window.location.href = "../index.html";
+            }
+        });
+    </script>
     Soma de 10 e 20
     <button onclick="minhafuncao(10,20)">Clique</button>
     <br>

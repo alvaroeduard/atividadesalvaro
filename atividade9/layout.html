@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Layout com Divs</title>
   <link rel="stylesheet" href="styles1.css">
 </head>
+
 <body>
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const token = localStorage.getItem('authToken');
+      if (!token) {
+        window.location.href = "../index.html";
+      }
+    });
+  </script>
   <div class="container">
     <div class="header">Header (100%)</div>
     <div class="menu">Menu</div>
@@ -18,4 +29,5 @@
     <div class="footer">Footer</div>
   </div>
 </body>
+
 </html>

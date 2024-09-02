@@ -1,12 +1,23 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8">
     <title>Atividade 9</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const token = localStorage.getItem('authToken');
+            if (!token) {
+                window.location.href = "../index.html";
+            }
+        });
+    </script>
     <span>Container body</span>
-    
+
     <div id="conteudo">
         Container div
         <div id="relativo" class="caixa">
@@ -22,4 +33,5 @@
         <a href="layout.html">LAYOUT ATIVIDADE</a>
     </div>
 </body>
+
 </html>
