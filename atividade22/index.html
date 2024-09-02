@@ -1,10 +1,56 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8" />
     <title>Atividade 22</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-    Em construção...
+    Soma de 10 e 20
+    <button onclick="minhafuncao(10,20)">Clique</button>
+    <br>
+
+    <button onclick="raiz(25)">Raiz de 25</button>
+    <br>
+    <button onclick="raiz(36)">Raiz de 36</button>
+    <br>
+    <button onclick="raiz(49)">Raiz de 49</button>
+    <br>
+    <a href="javascript:escreve()">Escreve</a>
+
+    <div id="minhaDiv">
+
+    </div>
+
+    <button onclick="escreverNumeros()">Escrever Números</button>
+
+    <div id="numeros"></div>
+    <br>
+
+    <button type="button" class="btn btn-primary" onclick="mostrarTexto()">Mostrar Texto no Modal</button>
+    <br>
+
+    <div class="modal fade" id="janela" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Texto do Usuário</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="conteudoModal">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
