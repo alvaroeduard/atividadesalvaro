@@ -12,7 +12,7 @@ document.getElementById("formLogin").addEventListener("submit", function(event) 
             
             if (user) {
                 
-                window.location.href = "index.html";
+                window.location.href = "repositorio.html";
             } else {
                 
                 document.getElementById("loginMessage").textContent = "Usuário ou senha inválidos!";
